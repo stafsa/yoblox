@@ -86,5 +86,6 @@ def run_server():
             print(f"[ERROR] {e}")
         time.sleep(0.01)
 
-threading.Thread(target=run_server, daemon=True).start()
-print("Server running...")
+if __name__ == "__main__":
+    print("Server running...")
+    run_server()
